@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 80%; /* Adjust the width as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+header {
+  background-color: black;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto 0 auto;
+  width: 80%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+.heading-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  /* font-weight: bold; */
+}
+
+.align-right {
+  text-align: right;
+}
+
+.move {
+  /* font-family: 'Major Mono Display', monospace; */
+  color: darkblue;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.h0 {
+  font-size: 40px;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Full width */
+  background-color: black; /* Dark background, change as needed */
+  color: white; /* White text color, change as needed */
+  text-align: center;
+  padding: 20px; /* Some padding */
+}
+
+h1 {
+  border-bottom: 2px solid #000; /* Adds the line */
+  padding-bottom: 10px; /* Adds space between the text and the line */
+}

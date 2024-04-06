@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Career{% endblock %}
+
+{% block content %}
+  <h1>Career</h1>
+  {% for career in career_files %}
+    <h2>{{ career.title }}</h2>
+    <div>{{ career.content|safe }}</div>
+    <div class="align-right">
+      <a href="/career/{{ career.file }}" class="move">Read More</a>
+    </div>
+  {% endfor %}
+{% endblock %}
