@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8" />
+    <title>My site</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/styles.css') }}"
     />
   </head>
+
   <body>
     <div class="page-container">
       {% include 'header.html' %}
 
-      <main>{% block content %} {% endblock %}</main>
+      <main>{% block content %}Default{% endblock %}</main>
 
       <footer>&copy; 2024 Yejin Park. All rights reserved.</footer>
-
-      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     </div>
   </body>
 </html>

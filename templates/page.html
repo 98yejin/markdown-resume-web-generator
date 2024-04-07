@@ -1,0 +1,7 @@
+{% extends "base.html" %} {% block content %}
+<h1>{{ page.title }}</h1>
+{{ page.html|safe }}
+<div class="align-right">
+  <a href="/" class="move">Back Home</a>
+</div>
+{% endblock content %}

@@ -44,7 +44,7 @@ def text_to_markdown(text):
     return markdown2.markdown(text)
 
 
-def read_markdown(filepath, root="content"):
+def read_markdown(filepath, root="pages"):
     fullpath = os.path.join(root, filepath)
     return text_to_markdown(read_file(fullpath))
 

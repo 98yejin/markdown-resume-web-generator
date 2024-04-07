@@ -1,0 +1,7 @@
+{% extends "base.html" %} {% block content %}
+<h2>List of stuff tagged <em>{{ tag }}</em></h2>
+{% with pages=pages %} {% include "_list.html" %} {% endwith %}
+<div class="align-right">
+  <a href="/" class="move">Back Home</a>
+</div>
+{% endblock content %}
