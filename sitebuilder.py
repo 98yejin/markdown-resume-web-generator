@@ -41,17 +41,20 @@ def tag(tag):
     return render_template("tag.html", pages=tagged, tag=tag)
 
 
+@app.route("/career/")
+def career():
+    career_files = summary_under_direcoty("pages/career")
+    return render_template(
+        "career.html",
+        pages=pages,
+        data={
+            "career_files": career_files,
+        },
+    )
+
+
 @app.route("/<path:path>/")
 def page(path):
-    if path == "career":
-        career_files = summary_under_direcoty("pages/career")
-        return render_template(
-            "career.html",
-            pages=pages,
-            data={
-                "career_files": career_files,
-            },
-        )
     page = pages.get_or_404(path)
     return render_template("page.html", page=page)
 
