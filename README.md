@@ -4,6 +4,10 @@
 
 Welcome to the Markdown Resume Web Generator! This tool is designed to make it incredibly easy for anyone to generate and host their own resume website using Markdown files. With just a few simple steps, you can have your professional resume up and running, hosted on GitHub Pages for free.
 
+## Sample
+
+Please Click [Here](https://98yejin.github.io/)!
+
 ## Features
 
 - **Easy to Use:** Fork the repository, rename it, and you're almost done.
